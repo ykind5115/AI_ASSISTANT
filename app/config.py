@@ -42,7 +42,7 @@ class Settings(BaseSettings):
     REPETITION_PENALTY: float = 1.2  # 重复惩罚，避免重复生成
     
     # Embedding配置
-    EMBEDDING_MODEL: str = Field(default="sentence-transformers/all-MiniLM-L6-v2", env="EMBEDDING_MODEL")
+    EMBEDDING_MODEL: str = Field(default="data/models/all-MiniLM-L6-v2", env="EMBEDDING_MODEL")
     EMBEDDING_DIM: int = 384
     
     # 会话配置
