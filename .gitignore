@@ -1,0 +1,2 @@
+# 忽略data文件夹下的models目录（包含所有模型参数）
+data/models/
