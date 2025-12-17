@@ -1,0 +1,8 @@
+# 可选依赖：当使用 .gguf（llama.cpp）模型时安装
+#
+# CPU:
+#   pip install -r requirements.txt -r requirements-gguf.txt
+#
+# Linux + CUDA（示例，可能需要编译）:
+#   CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python
+llama-cpp-python>=0.2.0

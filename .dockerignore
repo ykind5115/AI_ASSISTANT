@@ -1,0 +1,18 @@
+.git
+.idea
+.pytest_cache
+__pycache__
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+.env
+
+# Mount these on the server instead
+data/
+logs/
+models/
+
+frontend/node_modules/
+

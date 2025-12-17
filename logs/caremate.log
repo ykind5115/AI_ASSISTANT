@@ -1,0 +1,460 @@
+2025-12-07 21:25:41,120 - app.main - INFO - ==================================================
+2025-12-07 21:25:41,121 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-07 21:25:41,121 - app.main - INFO - ==================================================
+2025-12-07 21:25:41,122 - app.main - INFO - 初始化数据库...
+2025-12-07 21:25:41,123 - app.main - INFO - 数据库初始化完成
+2025-12-07 21:25:41,123 - app.main - INFO - 初始化模型...
+2025-12-07 21:25:41,124 - app.ml.local_loader - INFO - 正在加载模型: gpt2, 设备: cpu
+2025-12-07 21:25:41,147 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: d055df77-4f01-4f28-a838-8dc057775973)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:25:41,149 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-12-07 21:25:42,189 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 1815cfd7-349a-4d53-8e00-efbe0cabaf4a)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:25:42,189 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-12-07 21:25:44,220 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: f9e393c0-2370-4a56-a457-07f74fcf6fa6)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:25:44,221 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-12-07 21:25:48,251 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 8dfc8f45-5260-4422-8999-dacbdf4be360)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:25:48,252 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-12-07 21:25:56,283 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 59ff9c9b-bb6e-42c9-b493-7a1dede77761)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:25:56,283 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-12-07 21:26:04,316 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: a9195385-b3b8-4197-abe6-c8de64d33e3f)')' thrown while requesting HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json
+2025-12-07 21:26:04,316 - app.ml.local_loader - ERROR - 模型加载失败: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /gpt2/resolve/main/tokenizer_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: a9195385-b3b8-4197-abe6-c8de64d33e3f)')
+2025-12-07 21:26:04,316 - app.ml.local_loader - WARNING - 使用Mock模式（模型未加载）
+2025-12-07 21:26:04,316 - app.main - INFO - 模型初始化完成
+2025-12-07 21:26:04,316 - app.main - INFO - 初始化嵌入服务...
+2025-12-07 21:26:04,316 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 21:26:04,318 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-07 21:26:04,318 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 21:26:04,327 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: fc88c66b-371f-4813-bc24-15641a4b81eb)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:04,328 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-12-07 21:26:05,357 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: dd193289-5119-49d0-979c-cd278ddf34dd)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:05,358 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-12-07 21:26:07,395 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: c842d548-1b47-4f78-987a-ee17ce5997ab)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:07,395 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-12-07 21:26:11,418 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 02f98480-582a-4f3d-9e57-e9e07380732e)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:11,419 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-12-07 21:26:19,447 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: d8b6c7ca-44a5-40a9-8e87-198a8f7da1a3)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:19,447 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-12-07 21:26:27,463 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 9ecf8546-c5d0-44fd-b9b2-74f0cfb0688d)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+2025-12-07 21:26:27,464 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name sentence-transformers/all-MiniLM-L6-v2. Creating a new one with mean pooling.
+2025-12-07 21:26:27,503 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 95d80fc8-f068-4fc3-8e70-264fef262b08)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:27,503 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-12-07 21:26:28,521 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: a99d3141-c6d6-4c34-a783-82d559544fc3)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:28,521 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-12-07 21:26:30,540 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 75814304-751c-42ef-af63-072a0f128524)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:30,540 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-12-07 21:26:34,583 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 3d80c665-3784-415b-bbd6-150ed83c0366)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:34,584 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-12-07 21:26:42,599 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 56d029cf-c274-43e4-bd61-73aa5d607053)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:42,599 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-12-07 21:26:50,614 - huggingface_hub.utils._http - WARNING - '(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 9ba38b14-b1cd-4d6b-bd4d-b5a458947da5)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json
+2025-12-07 21:26:50,614 - app.ml.embedding - ERROR - 嵌入模型加载失败: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)'))))"), '(Request ID: 9ba38b14-b1cd-4d6b-bd4d-b5a458947da5)')
+2025-12-07 21:26:50,614 - app.main - INFO - 嵌入服务初始化完成
+2025-12-07 21:26:50,614 - app.main - INFO - 初始化调度器...
+2025-12-07 21:26:50,666 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-07 21:26:50,681 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-07 21:26:50,681 - app.main - INFO - 调度器初始化完成
+2025-12-07 21:26:50,681 - app.main - INFO - ==================================================
+2025-12-07 21:26:50,681 - app.main - INFO - 应用启动完成
+2025-12-07 21:26:50,681 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-07 21:26:50,681 - app.main - INFO - ==================================================
+2025-12-07 21:26:50,847 - app.services.session_manager - INFO - 创建新会话: 1
+2025-12-07 21:27:37,091 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:28:14,062 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:28:24,953 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:28:43,457 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:30:02,711 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:30:11,202 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:33:45,424 - app.main - INFO - 正在关闭应用...
+2025-12-07 21:33:45,427 - app.main - INFO - 应用已关闭
+2025-12-07 21:58:17,734 - app.main - INFO - ==================================================
+2025-12-07 21:58:17,734 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-07 21:58:17,734 - app.main - INFO - ==================================================
+2025-12-07 21:58:17,734 - app.main - INFO - 初始化数据库...
+2025-12-07 21:58:17,736 - app.main - INFO - 数据库初始化完成
+2025-12-07 21:58:17,736 - app.main - INFO - 初始化模型...
+2025-12-07 21:58:17,736 - app.main - INFO - 模型配置: MODEL_NAME=gpt2, MODEL_PATH=None, DEVICE=cuda
+2025-12-07 21:58:17,736 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-07 21:58:17,737 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-07 21:58:17,737 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-07 21:58:17,737 - app.ml.local_loader - INFO - 正在加载模型: gpt2, 设备: cuda
+2025-12-07 21:58:17,737 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-07 21:58:19,563 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-07 21:58:19,825 - app.ml.local_loader - ERROR - 模型加载失败: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2025-12-07 21:58:19,827 - app.ml.local_loader - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\workspace\AI_assistant\app\ml\local_loader.py", line 104, in load_model
+    self.model = AutoModelForCausalLM.from_pretrained(
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\models\auto\auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING - 使用Mock模式（模型未加载）
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING - 提示：模型加载失败可能的原因：
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING -   1. 网络连接问题（首次下载模型需要网络）
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING -   2. 磁盘空间不足
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING -   3. 内存不足
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING -   4. transformers库版本不兼容
+2025-12-07 21:58:19,827 - app.ml.local_loader - WARNING -   5. 模型名称或路径错误
+2025-12-07 21:58:19,832 - app.main - WARNING - 模型初始化完成，但模型未成功加载，将使用Mock模式
+2025-12-07 21:58:19,832 - app.main - INFO - 初始化嵌入服务...
+2025-12-07 21:58:19,833 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 21:58:19,834 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-07 21:58:19,834 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 21:58:24,322 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-12-07 21:58:37,522 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-07 21:58:37,522 - app.main - INFO - 嵌入服务初始化完成
+2025-12-07 21:58:37,522 - app.main - INFO - 初始化调度器...
+2025-12-07 21:58:37,569 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-07 21:58:37,582 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-07 21:58:37,582 - app.main - INFO - 调度器初始化完成
+2025-12-07 21:58:37,582 - app.main - INFO - ==================================================
+2025-12-07 21:58:37,582 - app.main - INFO - 应用启动完成
+2025-12-07 21:58:37,583 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-07 21:58:37,583 - app.main - INFO - ==================================================
+2025-12-07 21:59:00,280 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:59:03,043 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:59:05,070 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 21:59:23,469 - app.main - INFO - 正在关闭应用...
+2025-12-07 21:59:23,469 - app.main - INFO - 应用已关闭
+2025-12-07 22:07:54,058 - app.main - INFO - ==================================================
+2025-12-07 22:07:54,058 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-07 22:07:54,058 - app.main - INFO - ==================================================
+2025-12-07 22:07:54,058 - app.main - INFO - 初始化数据库...
+2025-12-07 22:07:54,065 - app.main - INFO - 数据库初始化完成
+2025-12-07 22:07:54,065 - app.main - INFO - 初始化模型...
+2025-12-07 22:07:54,065 - app.main - INFO - 模型配置: MODEL_NAME=gpt2, MODEL_PATH=None, DEVICE=cuda
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO - 正在加载模型: gpt2, 设备: cuda
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-07 22:07:54,065 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-07 22:07:55,980 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-07 22:07:56,421 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-07 22:07:57,305 - app.ml.local_loader - ERROR - 模型加载失败: The model has been loaded with `accelerate` and therefore cannot be moved to a specific device. Please discard the `device` argument when creating your pipeline object.
+2025-12-07 22:07:57,306 - app.ml.local_loader - ERROR - 错误详情: Traceback (most recent call last):
+  File "D:\workspace\AI_assistant\app\ml\local_loader.py", line 152, in load_model
+    self.generator = pipeline(
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\pipelines\__init__.py", line 1229, in pipeline
+    return pipeline_class(model=model, framework=framework, task=task, **kwargs)
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\pipelines\text_generation.py", line 121, in __init__
+    super().__init__(*args, **kwargs)
+  File "E:\anaconda\envs\CareMate\lib\site-packages\transformers\pipelines\base.py", line 981, in __init__
+    raise ValueError(
+ValueError: The model has been loaded with `accelerate` and therefore cannot be moved to a specific device. Please discard the `device` argument when creating your pipeline object.
+
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING - 使用Mock模式（模型未加载）
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING - 提示：模型加载失败可能的原因：
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING -   1. 网络连接问题（首次下载模型需要网络）
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING -   2. 磁盘空间不足
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING -   3. 内存不足
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING -   4. transformers库版本不兼容
+2025-12-07 22:07:57,307 - app.ml.local_loader - WARNING -   5. 模型名称或路径错误
+2025-12-07 22:07:57,310 - app.main - WARNING - 模型初始化完成，但模型未成功加载，将使用Mock模式
+2025-12-07 22:07:57,310 - app.main - INFO - 初始化嵌入服务...
+2025-12-07 22:07:57,311 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:07:57,313 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-07 22:07:57,313 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:08:02,411 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-07 22:08:02,411 - app.main - INFO - 嵌入服务初始化完成
+2025-12-07 22:08:02,411 - app.main - INFO - 初始化调度器...
+2025-12-07 22:08:02,462 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-07 22:08:02,473 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-07 22:08:02,473 - app.main - INFO - 调度器初始化完成
+2025-12-07 22:08:02,474 - app.main - INFO - ==================================================
+2025-12-07 22:08:02,474 - app.main - INFO - 应用启动完成
+2025-12-07 22:08:02,474 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-07 22:08:02,474 - app.main - INFO - ==================================================
+2025-12-07 22:08:19,636 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:20,171 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:20,340 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:20,690 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:20,830 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:20,981 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:21,223 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:08:21,360 - app.ml.model_api - WARNING - 模型未加载，使用Mock响应
+2025-12-07 22:10:48,322 - app.main - INFO - 正在关闭应用...
+2025-12-07 22:10:48,322 - app.main - INFO - 应用已关闭
+2025-12-07 22:11:55,863 - app.main - INFO - ==================================================
+2025-12-07 22:11:55,863 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-07 22:11:55,863 - app.main - INFO - ==================================================
+2025-12-07 22:11:55,863 - app.main - INFO - 初始化数据库...
+2025-12-07 22:11:55,866 - app.main - INFO - 数据库初始化完成
+2025-12-07 22:11:55,866 - app.main - INFO - 初始化模型...
+2025-12-07 22:11:55,866 - app.main - INFO - 模型配置: MODEL_NAME=gpt2, MODEL_PATH=None, DEVICE=cuda
+2025-12-07 22:11:55,866 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-07 22:11:55,867 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-07 22:11:55,867 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-07 22:11:55,867 - app.ml.local_loader - INFO - 正在加载模型: gpt2, 设备: cuda
+2025-12-07 22:11:55,867 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-07 22:11:55,867 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-07 22:12:01,819 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-07 22:12:02,278 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-07 22:12:03,234 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-07 22:12:03,234 - app.ml.local_loader - INFO - 模型加载完成: gpt2, 设备: cuda
+2025-12-07 22:12:03,234 - app.main - INFO - 模型初始化完成
+2025-12-07 22:12:03,235 - app.main - INFO - 初始化嵌入服务...
+2025-12-07 22:12:03,235 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:12:03,239 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-07 22:12:03,239 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:12:09,371 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-07 22:12:09,371 - app.main - INFO - 嵌入服务初始化完成
+2025-12-07 22:12:09,371 - app.main - INFO - 初始化调度器...
+2025-12-07 22:12:09,425 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-07 22:12:09,436 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-07 22:12:09,436 - app.main - INFO - 调度器初始化完成
+2025-12-07 22:12:09,436 - app.main - INFO - ==================================================
+2025-12-07 22:12:09,437 - app.main - INFO - 应用启动完成
+2025-12-07 22:12:09,437 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-07 22:12:09,437 - app.main - INFO - ==================================================
+2025-12-07 22:15:15,044 - app.main - INFO - 正在关闭应用...
+2025-12-07 22:15:15,045 - app.main - INFO - 应用已关闭
+2025-12-07 22:22:23,282 - app.main - INFO - ==================================================
+2025-12-07 22:22:23,282 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-07 22:22:23,282 - app.main - INFO - ==================================================
+2025-12-07 22:22:23,282 - app.main - INFO - 初始化数据库...
+2025-12-07 22:22:23,285 - app.main - INFO - 数据库初始化完成
+2025-12-07 22:22:23,285 - app.main - INFO - 初始化模型...
+2025-12-07 22:22:23,285 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-07 22:22:23,285 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-07 22:22:29,729 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-07 22:22:30,659 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-12-07 22:23:32,276 - huggingface_hub.file_download - WARNING - Error while downloading from https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/model.safetensors: HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-12-07 22:25:26,814 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-07 22:25:29,738 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-07 22:25:29,738 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-07 22:25:29,738 - app.main - INFO - 模型初始化完成
+2025-12-07 22:25:29,738 - app.main - INFO - 初始化嵌入服务...
+2025-12-07 22:25:29,739 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:25:29,741 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-07 22:25:29,741 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-07 22:25:35,021 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-07 22:25:35,022 - app.main - INFO - 嵌入服务初始化完成
+2025-12-07 22:25:35,022 - app.main - INFO - 初始化调度器...
+2025-12-07 22:25:35,078 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-07 22:25:35,089 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-07 22:25:35,090 - app.main - INFO - 调度器初始化完成
+2025-12-07 22:25:35,090 - app.main - INFO - ==================================================
+2025-12-07 22:25:35,090 - app.main - INFO - 应用启动完成
+2025-12-07 22:25:35,090 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-07 22:25:35,091 - app.main - INFO - ==================================================
+2025-12-07 22:34:16,307 - app.main - INFO - 正在关闭应用...
+2025-12-07 22:34:16,307 - app.main - INFO - 应用已关闭
+2025-12-08 12:22:10,492 - app.main - INFO - ==================================================
+2025-12-08 12:22:10,492 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-08 12:22:10,492 - app.main - INFO - ==================================================
+2025-12-08 12:22:10,492 - app.main - INFO - 初始化数据库...
+2025-12-08 12:22:10,495 - app.main - INFO - 数据库初始化完成
+2025-12-08 12:22:10,496 - app.main - INFO - 初始化模型...
+2025-12-08 12:22:10,496 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-08 12:22:10,496 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-08 12:22:10,496 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-08 12:22:10,496 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-08 12:22:10,496 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-08 12:22:10,497 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-08 12:22:10,497 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-08 12:22:12,591 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-08 12:22:13,140 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-08 12:22:15,240 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-08 12:22:15,240 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-08 12:22:15,240 - app.main - INFO - 模型初始化完成
+2025-12-08 12:22:15,241 - app.main - INFO - 初始化嵌入服务...
+2025-12-08 12:22:15,241 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-08 12:22:15,243 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-08 12:22:15,243 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-08 12:22:20,349 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-08 12:22:20,349 - app.main - INFO - 嵌入服务初始化完成
+2025-12-08 12:22:20,349 - app.main - INFO - 初始化调度器...
+2025-12-08 12:22:24,745 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-08 12:22:24,756 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-08 12:22:24,757 - app.main - INFO - 调度器初始化完成
+2025-12-08 12:22:24,757 - app.main - INFO - ==================================================
+2025-12-08 12:22:24,757 - app.main - INFO - 应用启动完成
+2025-12-08 12:22:24,757 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-08 12:22:24,757 - app.main - INFO - ==================================================
+2025-12-08 12:23:34,946 - app.main - INFO - 正在关闭应用...
+2025-12-08 12:23:34,946 - app.main - INFO - 应用已关闭
+2025-12-08 13:11:16,448 - app.main - INFO - ==================================================
+2025-12-08 13:11:16,449 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-08 13:11:16,449 - app.main - INFO - ==================================================
+2025-12-08 13:11:16,449 - app.main - INFO - 初始化数据库...
+2025-12-08 13:11:16,452 - app.main - INFO - 数据库初始化完成
+2025-12-08 13:11:16,452 - app.main - INFO - 初始化模型...
+2025-12-08 13:11:16,452 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-08 13:11:16,453 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-08 13:11:18,413 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-08 13:11:18,977 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-08 13:11:21,209 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-08 13:11:21,209 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-08 13:11:21,210 - app.main - INFO - 模型初始化完成
+2025-12-08 13:11:21,210 - app.main - INFO - 初始化嵌入服务...
+2025-12-08 13:11:21,210 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-08 13:11:21,213 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-08 13:11:21,214 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-08 13:11:26,279 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-08 13:11:26,280 - app.main - INFO - 嵌入服务初始化完成
+2025-12-08 13:11:26,280 - app.main - INFO - 初始化调度器...
+2025-12-08 13:11:27,582 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-08 13:11:27,592 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-08 13:11:27,592 - app.main - INFO - 调度器初始化完成
+2025-12-08 13:11:27,592 - app.main - INFO - ==================================================
+2025-12-08 13:11:27,592 - app.main - INFO - 应用启动完成
+2025-12-08 13:11:27,592 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-08 13:11:27,593 - app.main - INFO - ==================================================
+2025-12-08 13:13:46,352 - app.main - INFO - 正在关闭应用...
+2025-12-08 13:13:46,353 - app.main - INFO - 应用已关闭
+2025-12-16 16:35:48,182 - app.main - INFO - ==================================================
+2025-12-16 16:35:48,183 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-16 16:35:48,183 - app.main - INFO - ==================================================
+2025-12-16 16:35:48,183 - app.main - INFO - 初始化数据库...
+2025-12-16 16:35:48,184 - app.main - INFO - 数据库初始化完成
+2025-12-16 16:35:48,184 - app.main - INFO - 初始化模型...
+2025-12-16 16:35:48,185 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-16 16:35:48,185 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-16 16:35:50,316 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-16 16:35:50,934 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-16 16:35:56,613 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-16 16:35:56,614 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 16:35:56,614 - app.main - INFO - 模型初始化完成
+2025-12-16 16:35:56,614 - app.main - INFO - 初始化嵌入服务...
+2025-12-16 16:35:56,615 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 16:35:56,620 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-16 16:35:56,620 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 16:36:02,506 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-16 16:36:02,507 - app.main - INFO - 嵌入服务初始化完成
+2025-12-16 16:36:02,507 - app.main - INFO - 初始化调度器...
+2025-12-16 16:36:07,715 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-16 16:36:07,738 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-16 16:36:07,738 - app.main - INFO - 调度器初始化完成
+2025-12-16 16:36:07,740 - app.main - INFO - ==================================================
+2025-12-16 16:36:07,742 - app.main - INFO - 应用启动完成
+2025-12-16 16:36:07,744 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-16 16:36:07,745 - app.main - INFO - ==================================================
+2025-12-16 16:37:00,938 - app.services.session_manager - INFO - 创建新会话: 3
+2025-12-16 16:38:25,980 - app.main - INFO - 正在关闭应用...
+2025-12-16 16:38:25,981 - app.main - INFO - 应用已关闭
+2025-12-16 17:13:37,339 - app.main - INFO - ==================================================
+2025-12-16 17:13:37,339 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-16 17:13:37,339 - app.main - INFO - ==================================================
+2025-12-16 17:13:37,339 - app.main - INFO - 初始化数据库...
+2025-12-16 17:13:37,343 - app.main - INFO - 数据库初始化完成
+2025-12-16 17:13:37,343 - app.main - INFO - 初始化模型...
+2025-12-16 17:13:37,343 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-16 17:13:37,343 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-16 17:13:39,299 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-16 17:13:39,888 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-16 17:13:42,130 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-16 17:13:42,131 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 17:13:42,134 - app.main - INFO - 模型初始化完成
+2025-12-16 17:13:42,135 - app.main - INFO - 初始化嵌入服务...
+2025-12-16 17:13:42,135 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 17:13:42,147 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-16 17:13:42,149 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 17:13:47,832 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-16 17:13:47,833 - app.main - INFO - 嵌入服务初始化完成
+2025-12-16 17:13:47,835 - app.main - INFO - 初始化调度器...
+2025-12-16 17:13:48,067 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-16 17:13:48,125 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-16 17:13:48,126 - app.main - INFO - 调度器初始化完成
+2025-12-16 17:13:48,127 - app.main - INFO - ==================================================
+2025-12-16 17:13:48,129 - app.main - INFO - 应用启动完成
+2025-12-16 17:13:48,129 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-16 17:13:48,130 - app.main - INFO - ==================================================
+2025-12-16 17:14:03,194 - app.services.session_manager - INFO - 创建新会话: 4
+2025-12-16 17:14:27,090 - app.services.session_manager - INFO - 创建新会话: 5
+2025-12-16 17:14:58,271 - app.services.session_manager - INFO - 创建新会话: 6
+2025-12-16 17:31:52,168 - app.main - INFO - 正在关闭应用...
+2025-12-16 17:31:52,168 - app.main - INFO - 应用已关闭
+2025-12-16 18:40:12,073 - app.main - INFO - ==================================================
+2025-12-16 18:40:12,074 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-16 18:40:12,074 - app.main - INFO - ==================================================
+2025-12-16 18:40:12,074 - app.main - INFO - 初始化数据库...
+2025-12-16 18:40:12,076 - app.main - INFO - 数据库初始化完成
+2025-12-16 18:40:12,076 - app.main - INFO - 初始化模型...
+2025-12-16 18:40:12,076 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-16 18:40:12,076 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-16 18:40:12,076 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-16 18:40:12,076 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-16 18:40:12,076 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 18:40:12,076 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-16 18:40:12,077 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-16 18:40:13,790 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-16 18:40:14,340 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-16 18:40:16,452 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-16 18:40:16,453 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 18:40:16,453 - app.main - INFO - 模型初始化完成
+2025-12-16 18:40:16,453 - app.main - INFO - 初始化嵌入服务...
+2025-12-16 18:40:16,455 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 18:40:16,458 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-16 18:40:16,459 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 18:40:21,681 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-16 18:40:21,682 - app.main - INFO - 嵌入服务初始化完成
+2025-12-16 18:40:21,682 - app.main - INFO - 初始化调度器...
+2025-12-16 18:40:21,737 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-16 18:40:21,749 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-16 18:40:21,750 - app.main - INFO - 调度器初始化完成
+2025-12-16 18:40:21,750 - app.main - INFO - ==================================================
+2025-12-16 18:40:21,750 - app.main - INFO - 应用启动完成
+2025-12-16 18:40:21,750 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-16 18:40:21,751 - app.main - INFO - ==================================================
+2025-12-16 18:40:34,149 - app.services.session_manager - INFO - 创建新会话: 7
+2025-12-16 18:45:10,628 - app.main - INFO - 正在关闭应用...
+2025-12-16 18:45:10,629 - app.main - INFO - 应用已关闭
+2025-12-16 19:04:48,105 - app.main - INFO - ==================================================
+2025-12-16 19:04:48,105 - app.main - INFO - 启动 CareMate v1.0.0
+2025-12-16 19:04:48,105 - app.main - INFO - ==================================================
+2025-12-16 19:04:48,105 - app.main - INFO - 初始化数据库...
+2025-12-16 19:04:48,108 - app.main - INFO - 数据库初始化完成
+2025-12-16 19:04:48,108 - app.main - INFO - 初始化模型...
+2025-12-16 19:04:48,108 - app.main - INFO - 模型配置: MODEL_NAME=Qwen/Qwen2.5-1.5B-Instruct, MODEL_PATH=None, DEVICE=cuda
+2025-12-16 19:04:48,108 - app.ml.local_loader - INFO - ✓ 使用CUDA GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+2025-12-16 19:04:48,108 - app.ml.local_loader - INFO -   GPU显存: 8.00 GB
+2025-12-16 19:04:48,108 - app.ml.local_loader - INFO -   CUDA版本: 12.4
+2025-12-16 19:04:48,108 - app.ml.local_loader - INFO - 正在加载模型: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 19:04:48,108 - app.ml.local_loader - INFO - GPU信息: NVIDIA GeForce RTX 4070 Laptop GPU, 显存: 8.00 GB
+2025-12-16 19:04:48,109 - app.ml.local_loader - INFO - accelerate版本: 1.12.0
+2025-12-16 19:04:50,281 - app.ml.local_loader - INFO - 使用GPU模式加载模型（float16精度）
+2025-12-16 19:04:50,960 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-12-16 19:04:55,949 - app.ml.local_loader - INFO - ✓ 生成管道创建完成，设备: cuda
+2025-12-16 19:04:55,951 - app.ml.local_loader - INFO - 模型加载完成: Qwen/Qwen2.5-1.5B-Instruct, 设备: cuda
+2025-12-16 19:04:55,952 - app.main - INFO - 模型初始化完成
+2025-12-16 19:04:55,952 - app.main - INFO - 初始化嵌入服务...
+2025-12-16 19:04:55,954 - app.ml.embedding - INFO - 正在加载嵌入模型: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 19:04:55,960 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cuda:0
+2025-12-16 19:04:55,961 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-12-16 19:05:01,261 - app.ml.embedding - INFO - 嵌入模型加载完成
+2025-12-16 19:05:01,261 - app.main - INFO - 嵌入服务初始化完成
+2025-12-16 19:05:01,262 - app.main - INFO - 初始化调度器...
+2025-12-16 19:05:01,483 - apscheduler.scheduler - INFO - Scheduler started
+2025-12-16 19:05:01,526 - app.services.scheduler_service - INFO - 调度器初始化完成
+2025-12-16 19:05:01,528 - app.main - INFO - 调度器初始化完成
+2025-12-16 19:05:01,528 - app.main - INFO - ==================================================
+2025-12-16 19:05:01,528 - app.main - INFO - 应用启动完成
+2025-12-16 19:05:01,529 - app.main - INFO - API地址: http://127.0.0.1:8000
+2025-12-16 19:05:01,529 - app.main - INFO - ==================================================
+2025-12-16 19:05:12,854 - app.services.session_manager - INFO - 创建新会话: 8
+2025-12-16 19:10:06,205 - app.main - INFO - 正在关闭应用...
+2025-12-16 19:10:06,207 - app.main - INFO - 应用已关闭
